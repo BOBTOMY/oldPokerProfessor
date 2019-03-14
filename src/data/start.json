@@ -1,0 +1,264 @@
+{
+	"success": true,
+	"data": {
+		"trainHhId": 2078840,
+		"encryptData": "fSeXWntIWMOt9YFrYjDKgQ==",
+		"success": true,
+		"robotList": [{
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/adou.png",
+			"name": "大鱼阿斗",
+			"id": 6,
+			"detailImage": "身上集中了几乎所有扑克上的漏洞，起手牌范围弱，不仅不喜欢弃牌，而且喜欢诈唬。遇到这样的玩家，有强牌时不要担心他会弃牌，可以重注获取价值，也可以示弱勾引诈唬。但是，当牌力较弱时，轻易不要对大鱼发动大型的诈唬。",
+			"status": 1
+		}, {
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/lvbu.png",
+			"name": "傻凶吕布",
+			"id": 4,
+			"detailImage": "信奉“只要榔头重，没有偷不到的鸡”，诈唬很多而且下注很大，并不会去想自己的行动有没有道理。遇到这样的玩家，你应该用更高的频率去慢打他们，给足他们表演的机会，等着他们自动投币。虽然有时，你可能会被他们莫名其妙的反超，但是长期来看是值得的。",
+			"status": 1
+		}, {
+			"createTime": null,
+			"headImage": "/image/headimg/xiaoqiao.png",
+			"name": "紧弱小乔",
+			"id": 14,
+			"detailImage": "除了起手牌范围不是很弱以外，其他几乎与松弱玩家一样，风格比较被动，既不懂得价值下注，也不太会发动诈唬。遇到这样的玩家，要提高诈唬和半诈唬的频率，价值下注的范围要更强一些。当他们真正发力时，往往表明他们有一手超强牌，一定要谨慎对待。",
+			"status": null
+		}, {
+			"id": 10,
+			"name": "hero",
+			"headImage": "/image/headimg/moshengren.png",
+			"detailImage": "遇到未知的陌生玩家，应该默认把他当成所在级别最常见的玩家。一般来说，面对陌生玩家，应该采用相对标准和平衡的打法。",
+			"createTime": 1530177193000,
+			"status": 1
+		}, {
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/caozhi.png",
+			"name": "紧弱曹植",
+			"id": 8,
+			"detailImage": "除了起手牌范围不是很弱以外，其他几乎与松弱玩家一样，风格比较被动，既不懂得价值下注，也不太会发动诈唬。遇到这样的玩家，要提高诈唬和半诈唬的频率，价值下注的范围要更强一些。当他们真正发力时，往往表明他们有一手超强牌，一定要谨慎对待。",
+			"status": 1
+		}, {
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/diaochan.png",
+			"name": "松弱貂蝉",
+			"id": 5,
+			"detailImage": "起手牌范围比较弱，风格比较被动，既不懂得价值下注，也不太会发动诈唬。遇到这样的玩家，有强牌时往往要主动下注获取价值，而不是去慢打勾引诈唬。当他们真正发力时，往往预示着他们有一手超强牌，要非常谨慎的对待。",
+			"status": 1
+		}, {
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/menghuo.png",
+			"name": "铁头孟获",
+			"id": 9,
+			"detailImage": "有任何成牌、任何听牌，都非常不喜欢弃牌。遇到这样的玩家，一方面，干脆不要去诈唬他，甚至半诈唬都要减少；另一方面，除了要用顶对以上的牌连续开枪，中对大踢脚也别闲着，对上他们同样是有价值的。",
+			"status": 1
+		}, {
+			"createTime": 1530177193000,
+			"headImage": "/image/headimg/masu.png",
+			"name": "教条马谡",
+			"id": 2,
+			"detailImage": "有一定的理论基础，但是在实战中非常死板，只会生搬硬套，不会灵活运用。打法非常直来直去，不会拐弯抹角，遇到这样的玩家，要避免过度思考。在他们示弱时，要尽可能的给他们施加压力；在他们示强时，要给予足够的信任。",
+			"status": 1
+		}, {
+			"createTime": null,
+			"headImage": "/image/headimg/daqiao.png",
+			"name": "松弱大乔",
+			"id": 13,
+			"detailImage": "起手牌范围比较弱，风格比较被动，既不懂得价值下注，也不太会发动诈唬。遇到这样的玩家，有强牌时往往要主动下注获取价值，而不是去慢打勾引诈唬。当他们真正发力时，往往预示着他们有一手超强牌，要非常谨慎的对待。",
+			"status": null
+		}],
+		"totalHhNum": 10,
+		"theme": {
+			"id": 6,
+			"cnName": "智能推荐（混合训练）",
+			"name": "total_mid",
+			"classPackageId": 3,
+			"hhType": 0,
+			"simpleImage": "1.对手的名字代表了他们的打牌风格\r\n2.盲注等级代表了难度等级\r\n3.对手始终把你当陌生人对待",
+			"jsonInfo": "[{\"font_size\": \"16px;\", \"type\": \"text\", \"weight\": \"400\", \"is_click\": false, \"text\": \"1.\\u5bf9\\u624b\\u7684\\u540d\\u5b57\\u4ee3\\u8868\\u4e86\\u4ed6\\u4eec\\u7684\\u6253\\u724c\\u98ce\\u683c\\r\\n2.\\u76f2\\u6ce8\\u7b49\\u7ea7\\u4ee3\\u8868\\u4e86\\u96be\\u5ea6\\u7b49\\u7ea7\\r\\n3.\\u5bf9\\u624b\\u59cb\\u7ec8\\u628a\\u4f60\\u5f53\\u964c\\u751f\\u4eba\\u5bf9\\u5f85\", \"text_position\": \"left\", \"color\": \"#fff\"}]",
+			"sortNum": 60,
+			"score": 100,
+			"trainType": 1,
+			"totalHhNum": 10,
+			"adviceVideo": "建议观看教学视频《听相声学德扑》，巩固德扑知识体系。",
+			"adviceFriend": "[{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"加微信客服：\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"，有福利！\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"12px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"copy\",\"click\":false}] ",
+			"adviceNotice": "关注微信公众号“黑桃大师服务号”，领大礼包。",
+			"shortName": "扑克水平"
+		},
+		"currentHhNum": 1,
+		"nextHh": {
+			"can_shifan": 1,
+			"straddle": false,
+			"real_theme_id": 6,
+			"is_shifan": 0,
+			"seats": [{
+				"is_ai": 1,
+				"stack": 396,
+				"is_fold_man": 0,
+				"name": "大鱼阿斗",
+				"state": "participating",
+				"hole_card": ["4d", "4h"],
+				"uuid": "0",
+				"bot_id": 1,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 400,
+				"is_fold_man": 1,
+				"name": "傻凶吕布",
+				"state": "folded",
+				"hole_card": ["6s", "2s"],
+				"uuid": "1",
+				"bot_id": 3,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 400,
+				"is_fold_man": 1,
+				"name": "紧弱小乔",
+				"state": "folded",
+				"hole_card": ["Td", "3s"],
+				"uuid": "2",
+				"bot_id": 4,
+				"initial_stack": 400
+			}, {
+				"is_ai": 0,
+				"stack": 400,
+				"is_fold_man": 0,
+				"name": "hero",
+				"state": "participating",
+				"hole_card": ["Qh", "Js"],
+				"uuid": "3",
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 398,
+				"is_fold_man": 1,
+				"name": "紧弱曹植",
+				"state": "participating",
+				"hole_card": ["Qs", "6c"],
+				"uuid": "4",
+				"bot_id": 2,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 396,
+				"is_fold_man": 0,
+				"name": "松弱貂蝉",
+				"state": "participating",
+				"hole_card": ["Jd", "2h"],
+				"uuid": "5",
+				"bot_id": 0,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 400,
+				"is_fold_man": 1,
+				"name": "铁头孟获",
+				"state": "folded",
+				"hole_card": ["6d", "3c"],
+				"uuid": "6",
+				"bot_id": 5,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 400,
+				"is_fold_man": 1,
+				"name": "教条马谡",
+				"state": "folded",
+				"hole_card": ["As", "5c"],
+				"uuid": "7",
+				"bot_id": 6,
+				"initial_stack": 400
+			}, {
+				"is_ai": 1,
+				"stack": 400,
+				"is_fold_man": 1,
+				"name": "松弱大乔",
+				"state": "folded",
+				"hole_card": ["9c", "7s"],
+				"uuid": "8",
+				"bot_id": 7,
+				"initial_stack": 400
+			}],
+			"broad_cards": ["Qd", "7c", "5d", "Tc", "3h"],
+			"source_kn_name": "preflop_select",
+			"pot": {
+				"side": [],
+				"main": {
+					"amount": 10
+				}
+			},
+			"street": "preflop",
+			"dealer_btn": 3,
+			"degree_str": "低",
+			"timestamp": "2019031117374764",
+			"valid_actions": [{
+				"amount": 0,
+				"action": "fold"
+			}, {
+				"amount": 4,
+				"action": "call"
+			}, {
+				"amount": {
+					"min": 8,
+					"max": 400
+				},
+				"action": "raise"
+			}],
+			"next_player": 4,
+			"hh_type": 0,
+			"degree": 44,
+			"action_histories": {
+				"preflop": [{
+					"amount": 2,
+					"paid": 2,
+					"action": "SMALLBLIND",
+					"add_amount": 2,
+					"uuid": "4"
+				}, {
+					"amount": 4,
+					"paid": 4,
+					"action": "BIGBLIND",
+					"add_amount": 2,
+					"uuid": "5"
+				}, {
+					"paid": 0,
+					"action": "FOLD",
+					"uuid": "6"
+				}, {
+					"paid": 0,
+					"action": "FOLD",
+					"uuid": "7"
+				}, {
+					"paid": 0,
+					"action": "FOLD",
+					"uuid": "8"
+				}, {
+					"amount": 4,
+					"paid": 4,
+					"action": "CALL",
+					"uuid": "0"
+				}, {
+					"paid": 0,
+					"action": "FOLD",
+					"uuid": "1"
+				}, {
+					"paid": 0,
+					"action": "FOLD",
+					"uuid": "2"
+				}]
+			},
+			"ante": 0,
+			"share_title": "翻牌前，我们手持QJo，该怎么打？",
+			"train_type": 0,
+			"name": "pfiso-bc_h10g7_1213",
+			"theme_name": "total_mid",
+			"kn_name": "pfiso",
+			"user_level": 49,
+			"small_blind_amount": 2
+		}
+	},
+	"code": 200
+}
