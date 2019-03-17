@@ -23,7 +23,7 @@ import { View } from '@tarojs/components'
 class User extends Component {
 
     config = {
-    navigationBarTitleText: '练习'
+    navigationBarTitleText: '我的'
   }
 
   componentWillReceiveProps (nextProps) {

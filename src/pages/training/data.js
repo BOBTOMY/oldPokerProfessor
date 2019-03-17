@@ -90,6 +90,7 @@ var res = {
 		"token": "83fe62af86614375a116565ed2b9075f"
 	},
 	"code": 200
-}
+};
+res.data.mainButtonList.shift();
 
 export default res;
