@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "oldPokerProfessor",
 	"description": "",
-	"appid": "touristappid",
+	"appid": "wx7c73e0def6b2affd",
 	"setting": {
 		"urlCheck": false,
 		"es6": false,

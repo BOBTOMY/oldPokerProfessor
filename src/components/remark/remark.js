@@ -106,6 +106,7 @@ Component({
             });
         },
         showDialog: function(t) {
+          console.log(t, 'textValue');
             this.setData({
                 isShow: !0,
                 textValue: t

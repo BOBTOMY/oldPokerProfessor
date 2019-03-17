@@ -23,7 +23,7 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/training/index',
-      'pages/purchased/index',
+      // 'pages/purchased/index',
       'pages/user/index',
       'pages/practice/practice',
     ],
@@ -46,16 +46,16 @@ class App extends Component {
         },
         {
           "pagePath": "pages/training/index",
-          "text": "机票",
+          "text": "训练",
           "iconPath": "assets/icons/traffic.png",
           "selectedIconPath": "assets/icons/traffic_selected.png"
         },
-        {
-          "pagePath": "pages/purchased/index",
-          "text": "定制",
-          "iconPath": "assets/icons/dingzhi.png",
-          "selectedIconPath": "assets/icons/dingzhi_selected.png"
-        },
+        // {
+        //   "pagePath": "pages/purchased/index",
+        //   "text": "定制",
+        //   "iconPath": "assets/icons/dingzhi.png",
+        //   "selectedIconPath": "assets/icons/dingzhi_selected.png"
+        // },
         {
           "pagePath": "pages/user/index",
           "text": "我的",

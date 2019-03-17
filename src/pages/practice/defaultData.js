@@ -98,7 +98,7 @@ function getDefaultData(App) {
           text: "下一手",
           value: "",
           title: "牌局点评",
-          discuss: "分享讨论",
+          discuss: "",
           adviceTheme: {}
       },
       cancelText: "重玩本手",
@@ -187,7 +187,7 @@ function getDefaultData(App) {
           show: !1,
           tipsText: "",
           tipsImg: "",
-          tipsEwm: App.globalData.imgUrl + "/image/themeTips/tipsCode.png"
+          tipsEwm: ""
       },
       mallInfo: {},
       submitPay: !0,
@@ -303,7 +303,7 @@ function getSeatDefault(App) {
         tipsText: "",
         tipsImg: "",
         result: "",
-        tipsEwm: App.globalData.imgUrl + "/image/themeTips/tipsCode.png"
+        tipsEwm: ""
     },
     shouldBuyVip: !1,
     firstTrainButton: !1,

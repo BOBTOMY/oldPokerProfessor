@@ -39,7 +39,7 @@ var res = {
 				"score": 100,
 				"trainType": 2,
 				"totalHhNum": 10,
-				"adviceVideo": "建议观看教学视频《听相声学德扑》，巩固德扑知识体系。",
+				"adviceVideo": "",
 				"adviceFriend": "[{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"加微信客服：\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"，有福利！\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"12px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"copy\",\"click\":false}] ",
 				"adviceNotice": "关注微信公众号“黑桃大师服务号”，领大礼包。",
 				"shortName": "扑克水平"

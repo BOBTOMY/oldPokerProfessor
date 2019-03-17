@@ -123,7 +123,7 @@ Page({
       if (clearTimeout(i), wx.hideLoading(), t.data.success) {
           o = 0, n = 0;
           var a = t.data.data;
-        debugger
+        // debugger
           if (e.data.options.id = a.theme.id, e.data.options.title = a.theme.cnName, e.data.options.content = a.theme.jsonInfo,
           e.setData({
               "options.share": !1,
@@ -152,7 +152,7 @@ Page({
                   text: "下一手",
                   value: "",
                   title: "牌局点评",
-                  discuss: "分享讨论"
+                  discuss: ""
               }
           }), a.currentHhNum)
           if (1 == a.currentHhNum) {
@@ -160,20 +160,21 @@ Page({
               var s = JSON.parse(a.theme.jsonInfo), r = "", d = "";
               for (var l in s) "tipsImg" == s[l].type ? r = s[l].text : d += s[l].text;
               if ("" != r) {
-                e.setData({
-                    tipsInfo: {
-                        show: !0,
-                        tipsText: d,
-                        tipsImg: r,
-                        result: t.data.data.nextHh,
-                        tipsEwm: getApp().globalData.imgUrl + "/image/themeTips/tipsCode.png"
-                    }
-                });
+                e.gameCard(t.data.data.nextHh);
+                // e.setData({
+                //     tipsInfo: {
+                //         show: !0,
+                //         tipsText: d,
+                //         tipsImg: r,
+                //         result: t.data.data.nextHh,
+                //         tipsEwm: ""
+                //     }
+                // });
               } else {
                   // 显示 theme.jsonInfo 即 e.data.options.content （第一局显示的也是这个）
                   // 将返回的原始数据数据绑定到e.data.Introduction.result,用于点击开始按钮后的初始化数据
                   var c = e.data.Introduction;
-                  debugger
+                  // debugger
                   c.title = e.data.options.title, c.result = t, e.setData({
                       Introduction: c
                   }), e.selectComponent("#Introduction").showTextValue(e.data.options.content);
@@ -384,7 +385,7 @@ Page({
     },
     confirmIntroduction: function() {
         var t = this;
-        debugger
+        // debugger
         // defaultdata 默认为 开始训练
         "开始训练" == this.selectComponent("#Introduction").data.confirmText ? (this.selectComponent("#Introduction").hideDialog(),
         this.gameCard(this.data.Introduction.result.data.data.nextHh)) : "前往商城" == this.selectComponent("#Introduction").data.confirmText && t.clickMall();
@@ -550,7 +551,7 @@ Page({
     },
     startNewStreet: function() {
         var t = this;
-        debugger
+        // debugger
         t.showPuke(t.data.defaultStreet[t.data.streetIndex]), t.defaultBubble(), t.setData({
             actionIndex: -1,
             amount: 0,
@@ -906,7 +907,7 @@ Page({
         "catalog" == this.data.options.path ? wx.switchTab({
             url: "../catalog/catalog"
         }) : wx.switchTab({
-            url: "../index/index"
+            url: "../training/index"
         });
     },
 
@@ -1024,13 +1025,14 @@ Page({
         }
     },
     perfectShow: function(t) {
+      // debugger
         getApp().globalData.voiceGod.stop(), this.setData({
             perfectShow: !0,
             hideRemark: !0,
             shiFanData: !1,
             heroActionInfo: !1
         }), getApp().globalData.scene = 1001;
-        debugger
+        // debugger
         var a = this, e = t.currentTarget.dataset.name;
         "下一手" == e || "查看小结" == e || "开始训练" == e || "开始测评" == e ? (a.data.options.gameCard = "false",
         this.setData({
@@ -1107,11 +1109,56 @@ Page({
         var t = this;
         getApp().globalData.totalSpend > 0 && t.judgeGuide(4, "", "handHigh"), t.data.shiFanButton || t.countReview(1);
     },
+    handHigh: function() {
+        var t = this;
+        t.remark.hideDialog(), t.setData({
+            shiFanData: !0,
+            showPukeTime: 0,
+            stepTime: {
+                fold: 250,
+                action: 750,
+                allinTime: 1e3,
+                showTime: 750,
+                dealTime: 2e3
+            }
+        }), t.gameCard(wx.getStorageSync("shifanHh"))
+        // t.updateState(4), wx.showLoading({
+        //     title: "高手示范请求中",
+        //     mask: !0
+        // }), getApp().globalData.util.wxPracticeRequest("/countReview/add", "post", {
+        //     countType: 1,
+        //     trainHhId: t.data.trainHhId
+        // }, function(a) {
+        //     wx.hideLoading(), a.data.success ? (t.remark.hideDialog(), t.setData({
+        //         shiFanData: !0,
+        //         showPukeTime: 0,
+        //         stepTime: {
+        //             fold: 250,
+        //             action: 750,
+        //             allinTime: 1e3,
+        //             showTime: 750,
+        //             dealTime: 2e3
+        //         }
+        //     }), t.gameCard(wx.getStorageSync("shifanHh")), a.data.payCoin && wx.showToast({
+        //         title: a.data.payCoin,
+        //         icon: "none",
+        //         duration: 2e3
+        //     })) : null != a.data.code && 3001 == a.data.code ? t.noTaoZi() : null == a.data.code || 1008 != a.data.code && 1009 != a.data.code ? t.showModalInfo("服务器请求失败！", !0, "返回", "重新获取", function() {
+        //         t.countReview(countType);
+        //     }) : t.showModalInfo("服务器开小差了！", !0, "返回", "重新获取", function() {
+        //         t.countReview(countType);
+        //     });
+        // });
+    },
     discuss: function() {},
-    countReview: function(t) {},
+    countReview: function(t) {
+      var a = this;
+      1 == t ? 0 == a.data.guide.show || a.handHigh() : null;
+    },
     nextGame: function() {
         var t = this;
-        debugger
+        // debugger
+        // debugger
         if (0 == o) if (o = 1, this.setData({
             shiFanData: !1
         }), getApp().globalData.voiceGod.stop(), getApp().globalData.scene = 1001, console.log(this.data.remarkConfirm.text),

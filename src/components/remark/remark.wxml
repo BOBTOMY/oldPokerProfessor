@@ -18,7 +18,7 @@
             </view>
             <scroll-view class="wx-dialog-content" scrollY="{{true}}" style="color:{{contentColor}};">
                 <view style="text-align: left;">
-                    <richText bind:clickNouns="clickNouns" hidden="{{richText}}" textValue="{{textValue}}"></richText>
+                    <richText bind:clickNouns="clickNouns" hidden="{{richText}}" textValue="{{title=='训练小结' ? [textValue[0]] : textValue}}"></richText>
                 </view>
                 <view class="isContent">{{content}}</view>
             </scroll-view>

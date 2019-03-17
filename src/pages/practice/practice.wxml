@@ -24,13 +24,13 @@
                     <image class="perfectImg" src="../../images/train/perfect.png"></image>
                     <view class="pText">
                         <view class="pText1">这手牌打的完美！</view>
-                        <view class="pText1">本次点评不消耗桃子</view>
+                        <!-- <view class="pText1">本次点评不消耗桃子</view> -->
                     </view>
                 </view>
-                <view class="pCenter">
+                <!-- <view class="pCenter">
                     <button data-type="share" openType="share" style="background: none;background-size:100% 100%;background-repeat:no-repeat;"></button>
                     <image class="showOff" src="../../images/train/showOff.png"></image>
-                </view>
+                </view> -->
                 <view class="pBottom">
                     <view bindtap="{{victory=='perfect'?'perfectShow':''}}" class="pImgContent" data-name="replay" hidden="{{cancelText==''?true:trainType}}">
                         <image class="pImg1" src="../../images/train/button1.png"></image>
@@ -90,7 +90,7 @@
         <view class="bottom">
             <headImg dealer_btn="{{dealer_btn}}" headImageData="{{seats[6]}}" isRight="{{false}}" wx:if="{{seats[6].state!='empty'}}"></headImg>
             <view class="poolBottom">
-                <image class="logo" src="../../images/train/logo.png"></image>
+                <!-- <image class="logo" src="../../images/train/logo.png"></image> -->
                 <view class="isChip isList">底池：{{pot}}</view>
                 <view class="chipContent isList">
                     <image class="chipImg" src="../../images/train/chip.png"></image>
