@@ -1,0 +1,77 @@
+<form bindsubmit="formSubmit" reportSubmit="{{true}}">
+    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                                        <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                                                            <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                                                <form bindsubmit="formSubmit" reportSubmit="{{true}}">
+                                                                                                                    <button class="formBtn" formType="submit" style="height:{{scrollHeight}}px;">
+                                                                                                                        <scroll-view scrollY="{{true}}" style="height:{{scrollHeight}}px;position: relative;z-index: 100;">
+                                                                                                                            <view class="indexContent">
+                                                                                                                                <view class="indexBottom">
+                                                                                                                                    <view bindtap="train" class="indexItem" data-action="{{item.arrayValue[3]}}" data-id="{{item.valueInfoSecond}}" data-index="{{index}}" data-keyInfo="{{item.keyInfo}}" wx:for="{{mainButtonList}}" wx:key="index">
+                                                                                                                                        <view class="indexClick {{item.keyInfo=='vip'||item.keyInfo=='vipCanTry'?'buttonStyle2':item.keyInfo=='video'?'buttonStyle3':'buttonStyle1'}}">
+                                                                                                                                            <image class="indexButton" src="{{item.arrayValue[1]}}"></image>
+                                                                                                                                            <view>
+                                                                                                                                                <text class="text1" decode="{{true}}">{{item.arrayValue[0]}}</text>
+                                                                                                                                                <text class="text2" decode="{{true}}">{{item.arrayValue[2]}}</text>
+                                                                                                                                            </view>
+                                                                                                                                        </view>
+                                                                                                                                        <image class="clickHand" src="../../images/icons/hand.png" wx:if="{{item.arrayValue[3]=='important'}}"></image>
+                                                                                                                                    </view>
+                                                                                                                                </view>
+                                                                                                                            </view>
+                                                                                                                            <image class="bjImg" src="../../images/train/bj.jpg"></image>
+                                                                                                                        </scroll-view>
+                                                                                                                    </button>
+                                                                                                                </form>
+                                                                                                            </button>
+                                                                                                        </form>
+                                                                                                    </button>
+                                                                                                </form>
+                                                                                            </button>
+                                                                                        </form>
+                                                                                    </button>
+                                                                                </form>
+                                                                            </button>
+                                                                        </form>
+                                                                    </button>
+                                                                </form>
+                                                            </button>
+                                                        </form>
+                                                    </button>
+                                                </form>
+                                            </button>
+                                        </form>
+                                    </button>
+                                </form>
+                            </button>
+                        </form>
+                    </button>
+                </form>
+            </button>
+        </form>
+    </button>
+</form>

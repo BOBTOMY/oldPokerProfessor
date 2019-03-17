@@ -73,8 +73,19 @@ Page({
         this.remark = this.selectComponent("#remark"), this.isSlider = this.selectComponent("#isSlider"),
         this.dialogModel = this.selectComponent("#dialogModel");
         var t = this;
-        this.getGAme({
-            data: startData,
+        // this.getGAme({
+        //     data: startData,
+        // });
+        "true" == t.data.options.gameCard ? t.data.options.id ? (t.setData({
+            remarkConfirm: {
+                text: ""
+            }
+        }), t.getGAme("/trainHh/show", {
+            encryptData: t.data.options.id
+        })) : t.getGAme("/getNextHh", {
+            themeId: t.data.options.KnowledgeId
+        }) : 0 == t.data.options.id ? t.getGAme("/getNextHh", {}) : t.getGAme("/getNextHh", {
+            themeId: t.data.options.id
         });
     },
     /**
@@ -90,16 +101,16 @@ Page({
                 mask: !0
             });
         }, 300);
-        this.getGAmeAction(t, i);
+        // this.getGAmeAction(t, i);
         // debugger
-        // getApp().globalData.util.wxPracticeRequest(t, "post", a, function(t) {
-        //   // debugger
-        //
-        // }, function() {
-        //     o = 0, n = 0, wx.hideLoading(), e.showModalInfo("网络不好，请求失败", !0, "返回", "重新请求", function() {
-        //         e.getGAme(t, a);
-        //     });
-        // });
+        getApp().globalData.util.wxPracticeRequest(t, "post", a, function(t) {
+          // debugger
+          e.getGAmeAction(t, i);
+        }, function() {
+            o = 0, n = 0, wx.hideLoading(), e.showModalInfo("网络不好，请求失败", !0, "返回", "重新请求", function() {
+                e.getGAme(t, a);
+            });
+        });
     },
     /**
      * 获取数据之后的下一步操作
@@ -143,7 +154,7 @@ Page({
                   title: "牌局点评",
                   discuss: "分享讨论"
               }
-          }), a.currentHhNum) 
+          }), a.currentHhNum)
           if (1 == a.currentHhNum) {
               // todo: currentHhNum 是什么
               var s = JSON.parse(a.theme.jsonInfo), r = "", d = "";
@@ -184,7 +195,7 @@ Page({
       });
     },
     /**
-     * 
+     *
      * @param {Object} t nextHh
      */
     gameCard: function(t) {
@@ -248,7 +259,7 @@ Page({
         }
     },
     /**
-     * 
+     *
      * @param {*} t  nextHh.seats
      * @param {*} a  nextHh
      */
@@ -519,11 +530,11 @@ Page({
 
             a.setData({
                 street: e
-            }), "showdown" == e ? 
-                a.victory(a.data.seats) 
-                : e in t ? 
-                    0 == t[e].length ? 
-                        "showdown" in t ? 
+            }), "showdown" == e ?
+                a.victory(a.data.seats)
+                : e in t ?
+                    0 == t[e].length ?
+                        "showdown" in t ?
                             a.endStreet(t)
                             : (a.startNewStreet(),
                             setTimeout(function() {
@@ -531,7 +542,7 @@ Page({
                             }, 750))
                     : ( console.log('caonima', a.data.preStreet != a.data.street) && a.data.preStreet != a.data.street && a.startNewStreet(), a.data.heroActionLists[a.data.heroActionIndex + 1] || a.setData({
                         heroActionLists: []
-                    }), a.anteHandle(t[e], t)) 
+                    }), a.anteHandle(t[e], t))
                 : "showdown" in t && console.log("GAME OVER3!");
         } else a.data.streetIndex <= 5 && (a.setData({
             streetIndex: a.data.streetIndex + 1
