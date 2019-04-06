@@ -1,20 +1,20 @@
 var res = {
 	"success": true,
 	"data": {
+
 		"userInfo": {
-			"id": 41596,
-			"userName": "哈哈哈",
-			"avatarUrl": "https://wx.qlogo.cn/mmopen/vi_32/fH5ialbibyrWianEBOopr4Swibwkl411h8gZPRuLjfUD9YbVEqcPa6bu1EibfK9E6dn5EpmRoOSicCK2wwMhAQ5JSmsQ/132",
-			"totalScore": 38,
-			"isMember": 1,
-			"memberEndTime": 1560268800000,
+			"id": 44327,
+			"userName": "李彤",
+			"avatarUrl": "https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTLlhp2sedceeRjYd6JCQOBvTByrJ5ZCALDSELzxJLnIWKBiaibaAgeqKGUricEVv6Y5wcaZSrgtEHeyw/132",
+			"totalScore": 0,
+			"isMember": 0,
 			"coin": 0.00,
-			"isNotice": 1,
-			"totalTrainCount": 240,
+			"isNotice": 0,
+			"totalTrainCount": 0,
 			"noviceGuideStatus": 126,
 			"noviceGuideNum": 6,
-			"totalSpend": 1499.00,
-			"isWxFriend": 2
+			"totalSpend": 0.00,
+			"isWxFriend": 0
 		},
 		"warnMap": {
 			"videoVip": {
@@ -39,14 +39,14 @@ var res = {
 				"score": 100,
 				"trainType": 2,
 				"totalHhNum": 10,
-				"adviceVideo": "",
+				"adviceVideo": "建议观看教学视频《听相声学德扑》，巩固德扑知识体系。",
 				"adviceFriend": "[{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"加微信客服：\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"16px\",\"weight\":400,\"text\":\"，有福利！\",\"type\":\"text\",\"click\":false},{\"text_position\":\"left\",\"color\":\"#fff\",\"font_size\":\"12px\",\"weight\":400,\"text\":\"heitaodashi\",\"type\":\"copy\",\"click\":false}] ",
 				"adviceNotice": "关注微信公众号“黑桃大师服务号”，领大礼包。",
 				"shortName": "扑克水平"
 			},
 			"startTrain": {
 				"id": 6,
-				"cnName": "智能推荐（混合训练）",
+				"cnName": "智能推荐(混合训练+错题训练)",
 				"name": "total_mid",
 				"classPackageId": 3,
 				"hhType": 0,
@@ -62,32 +62,41 @@ var res = {
 				"shortName": "扑克水平"
 			}
 		},
+		"loginRemind": "[{\"click\":false,\"color\":\"#fff\",\"font_size\":\"16px\",\"text\":\"每天登录都可领取神秘奖品！\",\"text_position\":\"left\",\"type\":\"text\",\"weight\":400},{\"click\":false,\"color\":\"#fff\",\"font_size\":\"16px\",\"text\":\"https://www.heitaodashi.cn/image/mini_app/sign_in/noGive.jpg\",\"text_position\":\"left\",\"type\":\"tipsImg\",\"weight\":400}]",
 		"mainButtonList": [{
 			"id": 23,
 			"name": "mainButtons",
 			"keyInfo": "2",
-			"valueInfo": "[\"水平测试\",\"https://www.heitaodashi.cn/image/mini_app/index/start_test.png\",\"\"]",
+			"valueInfo": "[\"水平测试\",\"https://www.heitaodashi.cn/image/mini_app/index/start_test.png\",\"快速测出你的扑克水平&nbsp;&nbsp;&nbsp;&nbsp;\",\"important\"]",
 			"valueInfoSecond": "4",
 			"sortNum": 1,
-			"arrayValue": ["水平测试", "https://www.heitaodashi.cn/image/mini_app/index/start_test.png", ""]
+			"arrayValue": ["水平测试", "https://www.heitaodashi.cn/image/mini_app/index/start_test.png", "快速测出你的扑克水平&nbsp;&nbsp;&nbsp;&nbsp;", "important"]
+		}, {
+			"id": 47,
+			"name": "mainButtons",
+			"keyInfo": "rumen",
+			"valueInfo": "[\"快速入门\",\"https://www.heitaodashi.cn/image/mini_app/index/start_train.png\",\"适用于实战<1万手的新手&nbsp;&nbsp;&nbsp;\"]",
+			"valueInfoSecond": "25",
+			"sortNum": 2,
+			"arrayValue": ["快速入门", "https://www.heitaodashi.cn/image/mini_app/index/start_train.png", "适用于实战<1万手的新手&nbsp;&nbsp;&nbsp;"]
 		}, {
 			"id": 24,
 			"name": "mainButtons",
 			"keyInfo": "1",
-			"valueInfo": "[\"开始训练\",\"https://www.heitaodashi.cn/image/mini_app/index/start_train.png\",\"9人常规桌（标准规则）\"]",
+			"valueInfo": "[\"提高训练\",\"https://www.heitaodashi.cn/image/mini_app/index/start_train.png\",\"9人常规桌（标准规则）\"]",
 			"valueInfoSecond": "6",
-			"sortNum": 2,
-			"arrayValue": ["开始训练", "https://www.heitaodashi.cn/image/mini_app/index/start_train.png", "9人常规桌（标准规则）"]
+			"sortNum": 3,
+			"arrayValue": ["提高训练", "https://www.heitaodashi.cn/image/mini_app/index/start_train.png", "9人常规桌（标准规则）"]
 		}, {
 			"id": 25,
 			"name": "mainButtons",
 			"keyInfo": "vip",
-			"valueInfo": "[\"训练ante桌\",\"https://www.heitaodashi.cn/image/mini_app/index/vip.png\",\"8人ante+straddle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"]",
+			"valueInfo": "[\"Ante桌训练\",\"https://www.heitaodashi.cn/image/mini_app/index/vip.png\",\"8人ante+straddle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"]",
 			"valueInfoSecond": "5",
-			"sortNum": 3,
-			"arrayValue": ["训练ante桌", "https://www.heitaodashi.cn/image/mini_app/index/vip.png", "8人ante+straddle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+			"sortNum": 4,
+			"arrayValue": ["Ante桌训练", "https://www.heitaodashi.cn/image/mini_app/index/vip.png", "8人ante+straddle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
 		}],
-		"token": "83fe62af86614375a116565ed2b9075f"
+		"token": "ad3a0c7cb3fc4c9c97bc78b48adde636"
 	},
 	"code": 200
 };

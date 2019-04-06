@@ -109,6 +109,8 @@ Page({
                 result: t,
                 mainButtonList: t.data.data.mainButtonList
             });
+            console.log(res,'mainButtonList');
+
             for (var e in t.data.data.trainTheme) {
               console.log(e,'maoxiana');
               // 开始训练和测试

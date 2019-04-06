@@ -1,9 +1,12 @@
 @import "../../template/template.wxss";
 
 page {
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#0e473e),color-stop(50%,#2fc69d),color-stop(100%,#0e473e));
-    background: linear-gradient(to bottom,#0e473e 0%,#2fc69d 50%,#0e473e 100%);
+    /*background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#0e473e),color-stop(50%,#2fc69d),color-stop(100%,#0e473e));*/
+    /*background: linear-gradient(to bottom,#0e473e 0%,#2fc69d 50%,#0e473e 100%);*/
+    background-image: url('http://sowcar.com/t6/696/1554523977x2728329023.png');
+    background-position: center;
     height: 100%;
+
 }
 
 .practiceContainer {
