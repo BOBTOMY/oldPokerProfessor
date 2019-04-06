@@ -21,11 +21,12 @@
 .wx-dialog {
     width: 100%;
     text-align: center;
-    border-radius: 6rpx;
+    border-radius: 16rpx;
     overflow: hidden;
-    background: linear-gradient(135deg,transparent 10px,rgba(12,99,82,0.9) 0) top left,linear-gradient(-135deg,transparent 10px,rgba(12,99,82,0.9) 0) top right,linear-gradient(-45deg,transparent 10px,rgba(12,99,82,0.9) 0) bottom right,linear-gradient(45deg,transparent 10px,rgba(12,99,82,0.9) 0) bottom left;
-    background-size: 51% 51%;
-    background-repeat: no-repeat;
+    background-color: #2C3246;
+    /*background: linear-gradient(135deg,transparent 10px,rgba(12,99,82,0.9) 0) top left,linear-gradient(-135deg,transparent 10px,rgba(12,99,82,0.9) 0) top right,linear-gradient(-45deg,transparent 10px,rgba(12,99,82,0.9) 0) bottom right,linear-gradient(45deg,transparent 10px,rgba(12,99,82,0.9) 0) bottom left;*/
+    /*background-size: 51% 51%;
+    background-repeat: no-repeat;*/
 }
 
 .wx-dialog1 {
@@ -178,16 +179,16 @@
 }
 
 .upDown {
-    width: 122rpx;
-    height: 68rpx;
+    width: 40rpx;
+    height: 40rpx;
     position: absolute;
-    right: 10rpx;
-    top: 17rpx;
+    right: -13rpx;
+    top: -20rpx;
 }
 
 .upDown image {
-    width: 122rpx;
-    height: 68rpx;
+    width: 40rpx;
+    height: 40rpx;
 }
 
 button {

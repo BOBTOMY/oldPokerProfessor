@@ -27,9 +27,9 @@ page {
 .sliderProgress {
     margin-left: 200rpx;
     height: 20rpx;
-    background: rgb(28,96,75);
+    background: #ff9c1e;
     position: relative;
-    top: -21rpx;
+    top: -23rpx;
     left: -198rpx;
     border-radius: 50rpx;
 }
@@ -37,9 +37,10 @@ page {
 .weui-slider-inner {
     position: relative;
     height: 24rpx;
-    background-color: #eee;
+    background-color: rgba(0,0,0,0);
     border-radius: 50px;
     width: 750rpx;
+    border: 1rpx solid #ff9c1e;
 }
 
 .weui-slider-track {
@@ -90,7 +91,7 @@ page {
     min-width: 24px;
     color: #fff;
     text-align: center;
-    font-size: 14px;
+    font-size: 20rpx;
     transform: rotate(90deg);
 }
 

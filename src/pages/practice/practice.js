@@ -697,22 +697,22 @@ Page({
     },
     transformBubble: function(t, a) {
         var e = this;
-        "FOLD" == t.action ? (t.actions = "弃牌", t.bubbleBg = "#777", t.bubble = !0, t.imgOver = !0) : "CALL" == t.action ? (t.imgOver = !1,
+        "FOLD" == t.action ? (t.actions = "弃牌", t.bubbleBg = "#818AA0", t.bubble = !0, t.imgOver = !0) : "CALL" == t.action ? (t.imgOver = !1,
         "true" == a ? 0 == e.data.seats[3].paidCount ? (t.actions = "看牌", t.bubbleBg = "#4ab63c",
-        t.bubble = !1) : (t.chipAction = "chipAction", t.actions = "跟注", t.bubbleBg = "#a1376e",
+        t.bubble = !1) : (t.chipAction = "chipAction", t.actions = "跟注", t.bubbleBg = "#25A220",
         t.bubble = !0) : 0 == t.paid ? (t.actions = "看牌", t.bubbleBg = "#4ab63c", t.bubble = !1) : (t.chipAction = "chipAction",
-        t.actions = "跟注", t.bubbleBg = "#a1376e", t.bubble = !0)) : "RAISE" == t.action ? (t.imgOver = !1,
+        t.actions = "跟注", t.bubbleBg = "#25A220", t.bubble = !0)) : "RAISE" == t.action ? (t.imgOver = !1,
         t.chipAction = "chipAction", this.setData({
             haveRaise: !0,
             bet: e.data.bet + 1
-        }), 1 == e.data.bet ? (t.actions = "下注", t.bubbleBg = "#a20d15", t.bubble = !0) : (e.data.bet >= 3 ? t.actions = e.data.bet + "bet" : t.actions = "加注",
-        t.bubbleBg = "#a20d15", t.bubble = !0)) : "SMALLBLIND" == t.action ? (t.chipAction = "chipAction",
-        t.imgOver = !1, t.actions = "小盲", t.bubbleBg = "#a20d15", t.bubble = !0) : "BIGBLIND" == t.action ? (t.chipAction = "chipAction",
-        t.imgOver = !1, t.actions = "大盲", t.bubbleBg = "#a20d15", t.bubble = !0, this.setData({
+        }), 1 == e.data.bet ? (t.actions = "下注", t.bubbleBg = "#FF9C1E", t.bubble = !0) : (e.data.bet >= 3 ? t.actions = e.data.bet + "bet" : t.actions = "加注",
+        t.bubbleBg = "#FF9C1E", t.bubble = !0)) : "SMALLBLIND" == t.action ? (t.chipAction = "chipAction",
+        t.imgOver = !1, t.actions = "小盲", t.bubbleBg = "#FF9C1E", t.bubble = !0) : "BIGBLIND" == t.action ? (t.chipAction = "chipAction",
+        t.imgOver = !1, t.actions = "大盲", t.bubbleBg = "#FF9C1E", t.bubble = !0, this.setData({
             bet: e.data.bet + 1
         })) : "STRADDLE" == t.action ? (this.setData({
             haveRaise: !0
-        }), t.imgOver = !1, t.actions = "强抓", t.bubbleBg = "#a20d15", t.bubble = !0) : "ANTE" == t.action && (t.imgOver = !1,
+        }), t.imgOver = !1, t.actions = "强抓", t.bubbleBg = "#FF9C1E", t.bubble = !0) : "ANTE" == t.action && (t.imgOver = !1,
         t.actions = "ante", t.bubbleBg = "#5a27a2", t.bubble = !0), "true" == a && (t.bubble = !1);
     },
     defaultBubble: function() {

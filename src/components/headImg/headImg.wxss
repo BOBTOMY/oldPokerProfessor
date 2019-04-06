@@ -7,13 +7,13 @@
     flex-direction: column;
     align-items: center;
     z-index: 100;
-    background: rgba(0,0,0,0.4);
+/*    background: rgba(0,0,0,0.4);
     border-radius: 10rpx;
-    border: 4rpx solid rgba(0,0,0,0);
+    border: 4rpx solid rgba(0,0,0,0);*/
 }
 
 .headImageBorder {
-    border: 4rpx solid #30f01c;
+    border: 4rpx solid #ffffff;
 }
 
 .allinBorder {
@@ -23,12 +23,21 @@
 
 .nick {
     font-size: 20rpx;
-    width: 90rpx;
     height: 30rpx;
     line-height: 30rpx;
     color: #fff;
     overflow: hidden;
+    text-align: center;
+    align-items: center;
     white-space: nowrap;
+}
+
+.userinforcard{
+    width: 110rpx;
+    align-items: center;
+    border-radius: 10rpx;
+    background: rgba(0,0,0,0.2);
+
 }
 
 .bubble {
@@ -52,12 +61,12 @@
     left: -80rpx;
 }
 
-.headImg .bubbleTop {
+/*.headImg .bubbleTop {
     top: 110rpx;
-}
+}*/
 
 .glodNumber {
-    color: #fffcdb;
+    color: #f8e71c;
     font-size: 24rpx;
 }
 
@@ -69,6 +78,7 @@
     position: relative;
     top: 0;
     left: 0;
+    border-radius: 100%;
 }
 
 .imgContainerItem {
@@ -93,6 +103,7 @@
     width: 90rpx;
     display: inline-block;
     background: rgba(0,0,0,0.5);
+    border-radius: 100%;
     z-index: 10;
     position: absolute;
     top: 0;
@@ -133,7 +144,7 @@
     top: 88rpx;
 }
 
-.headImgLeft .bankerTop {
+/*.headImgLeft .bankerTop {
     right: 0rpx;
     top: 150rpx;
 }
@@ -141,7 +152,7 @@
 .headImgRight .bankerTop {
     left: 0rpx;
     top: 150rpx;
-}
+}*/
 
 .glod {
     font-size: 24rpx;
@@ -183,9 +194,9 @@
     margin-left: 5rpx;
 }
 
-.glodTop {
+/*.glodTop {
     top: 150rpx;
-}
+}*/
 
 .glodRight {
     left: -100rpx;
@@ -203,14 +214,14 @@
 
 .headImgLeft .backContainer {
     position: absolute;
-    top: 68rpx;
-    left: 68rpx;
+    top: 40rpx;
+    left: 60rpx;
 }
 
 .headImgRight .backContainer {
     position: absolute;
-    top: 68rpx;
-    right: 98rpx;
+    top: 40rpx;
+    right: 90rpx;
 }
 
 .backContainer .first {
@@ -707,11 +718,11 @@
 }
 
 .headImgRight {
-    margin-right: 10rpx;
+    margin-right: 30rpx;
 }
 
 .headImgLeft {
-    margin-left: 10rpx;
+    margin-left: 30rpx;
 }
 
 .banker .chipImg {

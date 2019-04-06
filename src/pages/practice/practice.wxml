@@ -10,6 +10,10 @@
         </view>
     </view>
 </view>
+<view class="bglogo">
+    <view class="bglogoname">POKER ON</view>
+    <view class="bglogoinfor">德州扑克个性化培训</view>
+</view>
 <view bindtap="{{shiFanData?'continueReview':''}}" class="perfectShow" hidden="{{perfectShow}}">
     <view class="{{victory=='perfect'?'victory1':'victory'}} {{perfectAction}}">
         <button class="loadingButton" hidden="{{loadingButton}}" loading="{{true}}">获取点评中</button>
@@ -173,11 +177,11 @@
         </view>
         <view class="infoContent">
             <view class="annotationContent">
-                <view bindtouchstart="heel" class="annotation {{index%2==0?'':'sencondTop'}} {{index==2?'firstTop':''}}" data-action="RAISE" data-click="{{item.bgColor}}" data-number="{{index}}" hidden="{{addHidden?annotation:true}}" wx:for="{{raiseBtn}}" wx:key="index">
-                    <view class="annotationTop {{item.bgColor?'':'raiseColor'}}">{{item.raiseNumber}}</view>
+                <view bindtouchstart="heel" class="annotation {{index%2==0?'thirdTop':'sencondTop'}} {{index==2?'firstTop':''}}" data-action="RAISE" data-click="{{item.bgColor}}" data-number="{{index}}" hidden="{{addHidden?annotation:true}}" wx:for="{{raiseBtn}}" wx:key="index">
+                    <view class="annotationTop {{item.bgColor?'':'raiseColor'}}" hidden="true" >{{item.raiseNumber}}</view>
                     <view class="multiple {{item.bgColor?'':'raiseBgColor'}}">
-                        <view>{{item.multiple}}</view>
-                        <view hidden="{{item.multiple=='allin'?true:false}}">{{item.title}}</view>
+                        <view class="multitext" >{{item.multiple}}</view>
+                        <view class="multitext" hidden="{{item.multiple=='allin'?true:false}}">{{item.title}}</view>
                     </view>
                 </view>
             </view>
@@ -186,17 +190,19 @@
             <view class="operation" hidden="{{annotation}}">
                 <view bindtouchstart="heel" class="operationItem" data-action="FOLD">
                     <view class="actionsContent {{foldImg?'itemContentFold0':'itemContentFold1'}}">
-                        <image class="operationImg" src="../../images/train/fold.png"></image>
+                        <image class="operationQImg" src="../../images/train/fold.png"></image>
+                        <view class="{{foldImg?'flod':'isFold'}}" >弃牌</view>
                     </view>
-                    <view class="{{foldImg?'flod':'isFold'}}">弃牌</view>
+                    <view class="{{foldImg?'flod':'isFold'}}" hidden="true">弃牌</view>
                 </view>
                 <view class="operationItem" hidden="{{addHidden?annotation:true}}">
                     <view bindtap="annotation" class="operationItem operationTop">
                         <view class="actionsContent itemContentAdd">
-                            <image class="operationImg" src="../../images/train/add.png"></image>
+                            <image class="operationQImg" src="../../images/train/add.png"></image>
+                            <view class="free" >加注</view>
                         </view>
-                        <view class="free">自由加注</view>
-                        <view class="refuel">{{seats[3].initial_stack}}</view>
+                        <view class="free" hidden="true">自由加注</view>
+                        <view class="refuel" hidden="true">{{seats[3].initial_stack}}</view>
                     </view>
                     <view class="heroChip" hidden="{{seats[3].paidCount==0?true:false}}" style="top: -60rpx;">
                         <image src="../../images/train/chip.png"></image>
@@ -213,8 +219,9 @@
                 <view bindtouchstart="heel" class="operationItem" data-action="CALL">
                     <view class="itemContentCall actionsContent">
                         <image class="operationImg" src="../../images/train/watch.png"></image>
+                        <view class="watch" >{{amount==0?'看牌':'跟注'}}</view>
                     </view>
-                    <view class="watch">{{amount==0?'看牌':'跟注'}}{{amount==0?'':amount}}</view>
+                    <view class="watch" hidden="true">{{amount==0?'看牌':'跟注'}}{{amount==0?'':amount}}</view>
                 </view>
             </view>
             <view class="operation" hidden="{{!annotation}}">

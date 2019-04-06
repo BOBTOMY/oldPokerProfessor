@@ -27,11 +27,12 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    border-radius: 3px;
+    border-radius: 6px;
     overflow: hidden;
-    background: linear-gradient(135deg,transparent 7px,rgb(12,99,82) 0) top left,linear-gradient(-135deg,transparent 7px,rgb(12,99,82) 0) top right,linear-gradient(-45deg,transparent 7px,rgb(12,99,82) 0) bottom right,linear-gradient(45deg,transparent 7px,rgb(12,99,82) 0) bottom left;
+    background-color: #2C3246;
+/*    background: linear-gradient(135deg,transparent 7px,rgb(12,99,82) 0) top left,linear-gradient(-135deg,transparent 7px,rgb(12,99,82) 0) top right,linear-gradient(-45deg,transparent 7px,rgb(12,99,82) 0) bottom right,linear-gradient(45deg,transparent 7px,rgb(12,99,82) 0) bottom left;
     background-size: 51% 51%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 .wx-dialog1 {

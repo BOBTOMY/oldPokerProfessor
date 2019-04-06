@@ -65,8 +65,8 @@ page {
 }
 
 .menu {
-    width: 65rpx;
-    height: 65rpx;
+    width: 35rpx;
+    height: 35rpx;
 }
 
 .menuDetailContent {
@@ -164,11 +164,32 @@ page {
     width: 500rpx;
     height: 300rpx;
     position: absolute;
-    top: 35rpx;
+    top: 95rpx;
     left: 125rpx;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bglogo{
+    width: 500rpx;
+    height: 100rpx;
+    position: absolute;
+    top: 200rpx;
+    left: 125rpx;
+    align-items: center;
+}
+
+.bglogoname{
+    font-size:36rpx;
+    color:#232839;
+    text-align: center;
+}
+
+.bglogoinfor{
+    font-size:20rpx;
+    color:#232839;
+    text-align: center;
 }
 
 .logo {
@@ -214,7 +235,7 @@ page {
 
 .poolBottom .isChip {
     font-size: 32rpx;
-    color: rgba(0,0,0,0.4);
+    color: #818aa0;
 }
 
 .poolBottom .flop {
@@ -235,7 +256,7 @@ page {
     width: 420rpx;
     height: 110rpx;
     position: absolute;
-    top: 95rpx;
+    top: 75rpx;
     left: 165rpx;
     text-align: center;
 }
@@ -265,9 +286,9 @@ page {
 }
 
 .info {
-    font-size: 28rpx;
-    height: 40rpx;
-    color: rgba(0,0,0,0.4);
+    font-size: 20rpx;
+    height: 35rpx;
+    color: #818aa0;
 }
 
 .currentHhNum {
@@ -322,24 +343,34 @@ page {
     border-radius: 100%;
     color: #fff;
     position: relative;
-    background: radial-gradient(circle at center,rgb(39,134,130) 0%,rgb(38,155,151) 56%,rgb(37,176,171) 100%);
+    background-color: #E6E6E6;
     box-shadow: 0px 2px 10px #222;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 10rpx 0;
 }
+.multitext{
+    color: #1d222b;
+    font-size: 20rpx;
+}
 
 .raiseBgColor {
     background: radial-gradient(circle at center,rgb(81,81,81) 0%,rgb(110,109,109) 56%,rgb(138,137,137) 100%)!important;
 }
 
-.firstTop {
-    top: -45rpx;
-}
+
 
 .sencondTop {
-    top: -30rpx;
+    top: 10rpx;
+}
+
+.thirdTop {
+    top: 40rpx;
+}
+
+.firstTop {
+    top: -5rpx;
 }
 
 .operation {
@@ -370,29 +401,33 @@ page {
 }
 
 .itemContentFold0 {
-    background: radial-gradient(circle at center,#ae3232 0%,#d74343 56%,#ff5353 100%);
+    /*background: radial-gradient(circle at center,#ae3232 0%,#d74343 56%,#ff5353 100%);*/
+    background-color: #e64a57;
     box-shadow: 0 0 10rpx #000;
 }
 
 .itemContentFold1 {
-    background: radial-gradient(circle at center,rgb(81,81,81) 0%,rgb(110,109,109) 56%,rgb(138,137,137) 100%);
+    /*background: radial-gradient(circle at center,rgb(81,81,81) 0%,rgb(110,109,109) 56%,rgb(138,137,137) 100%);*/
+    background-color: #e64a57;
     box-shadow: 0 0 10rpx #000;
 }
 
 .itemContentCall {
-    background: radial-gradient(circle at center,#1f8d17 0%,#27ab25 56%,#2fc833 100%);
+    /*background: radial-gradient(circle at center,#1f8d17 0%,#27ab25 56%,#2fc833 100%);*/
+    background-color: #26a722;
     box-shadow: 0 0 10rpx #000;
 }
 
 .itemContentAdd {
-    background: radial-gradient(circle at center,#cc8e2f 0%,#e3a53f 56%,#ffc153 100%);
+    /*background: radial-gradient(circle at center,#cc8e2f 0%,#e3a53f 56%,#ffc153 100%);*/
+    background-color: #ff9c1e;
     box-shadow: 0 0 10rpx #000;
 }
 
 .operationItem .flod {
     color: #fff;
     position: relative;
-    top: -10rpx;
+    top: 0rpx;
 }
 
 .isFold {
@@ -404,7 +439,7 @@ page {
 .operationItem .free {
     color: #fff;
     position: relative;
-    top: -10rpx;
+    top: 0rpx;
 }
 
 .operationItem .refuel {
@@ -416,13 +451,19 @@ page {
 .operationItem .watch {
     color: #fff;
     position: relative;
-    top: -10rpx;
+    top: 0rpx;
 }
 
 .operationImg {
-    width: 50rpx;
-    height: 50rpx;
-    margin-top: 25rpx;
+    width: 40rpx;
+    height: 30rpx;
+    margin-top: 20rpx;
+}
+
+.operationQImg {
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 20rpx;
 }
 
 .operationTop {
